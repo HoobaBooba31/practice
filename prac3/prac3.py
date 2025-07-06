@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-from math import sin, pi
+from math import pi
 import numpy as np
 
 

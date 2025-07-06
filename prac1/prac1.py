@@ -2,7 +2,6 @@ import matplotlib.pyplot as plt
 import os
 import xml.etree.ElementTree as ET
 from xml.dom import minidom
-
 from math import sin
 
 
@@ -24,6 +23,7 @@ def xml_file_creation(data):
     with open('results/prac1.xml', 'w') as f:
         f.write(pretty_xml)
 
+
 if not os.path.exists('results'):
     os.mkdir('results')
 
@@ -38,10 +38,7 @@ while x <= 1:
     data.append([str(x), str(y)])
     x += 0.01
     
-
 xml_file_creation(data)
-
-
 fix, ax = plt.subplots()
 ax.plot(axes[0],axes[1])
 plt.show()
